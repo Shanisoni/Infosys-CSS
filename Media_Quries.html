@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Media_Queries</title>
+
+
+<style>
+
+     .container{
+        height:500px;
+        width:400px;
+        background-color: aqua;
+        border: solid rgb(9, 226, 99) 4px;
+     }
+
+/* In media quqery min-width means if the dimension of output crosses the given dimension in media query then it will be changed
+in the given color in media query  */
+     /* @media (min-width:500px){
+        .container{
+            background-color: rgb(3, 179, 27);
+        }
+     } */
+
+
+     /* Max-width means if the dimension of the output crosses the limit 0 to 500px then the color mentioned in the 
+     media query  will be applied to the display  */
+     /* @media (max-width:600px){
+        .container{
+            background-color: rgb(231, 18, 135);
+        }
+     } */
+    
+
+     /* We can provide also a range for colour changes  */
+     @media (min-width:300px) and (max-width:600px){
+        .container{
+            background-color: rgb(131, 145, 8);
+        }
+     }
+
+
+</style>
+
+
+
+</head>
+<body>
+    
+<div class="container">
+       This is shani soni 
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

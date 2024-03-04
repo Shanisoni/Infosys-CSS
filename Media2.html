@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media </title>
+
+     <style>
+       
+
+       .con{
+        background-color: aqua;
+        border: solid rgb(0, 0, 0) 4px;
+        height:450px;
+        width:500px;
+        display: flex;
+        /* flex-direction: column; */
+       }
+       
+
+       .box{
+        border: solid yellow 5px;
+        background-color: rgb(40, 172, 14);
+        height: 200px;
+        width: 200px;
+       }
+       
+       #a{
+        background-color: blue;
+        border: solid rgb(202, 75, 1) 5px;
+       }
+
+       #b{
+        background-color:rgb(83, 0, 160);
+        border: solid rgb(0, 66, 104) 5px;
+       }
+
+       #c{
+        background-color: cadetblue;
+        border: solid rgb(221, 10, 133) 5px;
+       }
+
+       #d{
+        background-color: bisque;
+        border: solid rgb(216, 216, 11) 5px;
+       }
+    
+
+       @media(min-width:500px){
+        .con{
+            flex-direction: row;
+        }
+       }
+
+       @media(max-width:500px){
+        .con{
+            flex-direction: column;
+        }
+       }
+
+     
+
+
+     </style>
+
+
+
+</head>
+
+<body>
+    
+<div class="con">
+
+    <div class="box "  id="a">Box1</div>
+
+    <div class="box " id="b">Box2</div>
+
+    <div class="box " id="c">Box3</div>
+
+    <div class="box " id="d">Box4</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

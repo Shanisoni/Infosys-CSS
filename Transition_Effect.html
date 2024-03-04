@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition_Effect</title>
+</head>
+
+
+     <style>
+
+        *{
+            margin:0px;
+            padding:0px;
+        }
+
+        .box{
+            background-color: aqua;
+            width: 20px ;
+            height : 903px ;
+            border : 8px  black   solid; 
+            /* transition-property: all;
+            transition-duration: 5s ; */
+            /* transition-timing-function: linear; */
+            /* transition-timing-function: ease-in; */
+            /* transition-timing-function: ease-out;
+            transition-delay: 0s ; */
+            /* transition:all 2s linear 0s ; */
+            transition: width 0.5s , height 5s ;
+
+        }
+
+        .box:hover{
+
+            width:1900px ;
+            height : 900px ;
+            background-color: red ;
+            
+            border-color: blue;
+            /* border: 12px ; */
+
+        }
+
+
+
+
+
+     </style>
+<body>
+
+    <div class="container">
+
+        <div class="box"> 
+
+        </div>
+
+                               
+
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

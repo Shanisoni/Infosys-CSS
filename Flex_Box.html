@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+
+
+    <style>
+          #container{
+            background-color:rgb(238, 238, 109) ;
+            border: solid rgb(226, 11, 11) 6px ;
+            height:250px;
+            display:flex;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            flex-direction: row;
+            /*  Importent 
+            
+            If the flex direction is row wise then cross axix will column wise it means its start point will 
+            be on top and end point will be on bottom side  */
+            /* flex-wrap: wrap; */
+            /* flex-flow:wrap ; */
+            /* allign-content is used to reduce the gap between two items when the are wrapped  */
+            /* align-content: start;
+             */
+            /* justify-content helps to allign the content  */
+            /* justify-content: center; */
+            /* justify-content:center; */
+            justify-content:center;
+
+            /* align-items:center; */
+            align-items:center;
+            /* align-items:start; */
+            /* align-items:center; */
+            /* flex-shrink: 1; */
+            /* flex-shrink is use to reduce the shrinking speed of whole 
+            container or of a specific container(such as div) */
+            /* flex-grow is used to speedup the size growing speed of whole 
+            container or of a specific container (such as div)  */
+            /* flex-grow: 1px; */
+            /* align-self: ;   is used to align the container or div any  */
+            
+          }
+        #p{
+            /* height: 100px;
+            border:solid red 1px ;
+            width:100px; */
+            background-color: rgb(207, 11, 70);
+            /* margin:2px;
+            padding:2px; */
+            /* flex-shrink: 4; */
+            /* flex-grow: 4; */
+            align-self: center;
+            /* order: 3; */
+           
+
+        }
+        #l{
+            /* height: 100px;
+             
+            width:100px; */
+            border:solid rgb(12, 27, 230) 4px ;
+            background-color: rgb(24, 216, 7);
+            /* margin:2px;
+            padding:2px; */
+            /* flex-shrink: 1; */
+            /* flex-grow: 1px; */
+            align-self: center;
+            /* order: 1; */
+        }
+        #x{
+            /* height: 100px; */
+            background-color: rgb(29, 105, 10);
+            border:solid rgb(0, 4, 221) 4px ;
+            /* width:100px;
+           
+            margin:2px;
+            padding:2px; */
+            /* flex-shrink: 1; */
+            /* flex-grow: 1px; */
+            align-self: center;
+        }
+        #z{
+            background-color: rgb(156, 12, 137);
+            border:solid rgb(0, 4, 221) 4px ;
+            /* height: 100px; */
+           
+            /* width:100px;
+           
+            margin:2px;
+            padding:2px; */
+            /* flex-shrink: 1; */
+            /* flex-grow: 1px; */
+            /* flex-basis: 500px; */
+            /* flex-basis is used to increase the size of container or box  */
+            align-self: center;
+            order: 1;
+        }
+
+        .box1{
+            /* to see the stretch effect uncommet the height attribute  */
+
+            height: 100px; 
+            border:solid rgb(28, 10, 189) 4px ;
+            width:100px;
+            background-color: rgb(4, 130, 168);
+            margin:2px;
+            padding:2px;
+
+        }
+        
+       
+    </style>
+</head>
+
+
+<body>
+         <div id="container">
+
+
+        <div class="box1" id="p"></div>
+        <div class="box1" id="l"></div>
+        <div class="box1" id="z"></div>
+        <div class="box1" id="x"></div>
+
+         </div>
+
+
+
+
+         
+
+
+
+
+
+
+
+
+
+
+
+         align-items:center;
+
+         justify-content:center;
+        
+
+         justify-content:center;
+</body>
+</html>

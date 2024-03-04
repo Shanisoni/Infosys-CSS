@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    padding: 4rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    /* grid-template-columns: 100px 100px 100px; */
+    /* Jitne rows hote h utne rows  
+    /*  We can use also fr instead of 100px or else  */
+    /* grid-template-rows: 100px 100px ; */
+    /* grid-template-columns: 1fr 1fr 1fr ; */
+    /*  If we dont want to write again again 100px or else so we can use repeat method  */
+    /* grid-template-rows:  repeat(4   ,1fr);
+    grid-template-columns: repeat(3,1fr); */
+
+    grid-template-rows:  repeat(6,1fr);
+    grid-template-columns: repeat(1,1fr);
+
+}
+
+.item{
+    color: aliceblue;
+    font-size: 25px;
+    background-color: rgb(60, 60, 214);
+    border: solid 5px rgb(24, 16, 16) ;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+@media (min-width:768px){
+    .container{
+        grid-template-rows:  repeat(4   ,1fr);
+        grid-template-columns: repeat(3,1fr);
+    }
+    .header , .footer{
+        grid-column-start: 1;
+        grid-column-end:  4;
+        
+    }
+    .sidebar{
+        grid-row-start: 2 ;
+        grid-row-end: 4 ;
+     
+    }
+    .tom{
+        grid-column-start: 2;
+        grid-column-end:  4;
+    
+    }
+
+}

@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: solid black 5px;
+    /* justify-self: ;  is used to position the items in the content area  either start , end , or center */    
+    /* justify-self: center; */
+    /* justify-self : stretch ; is used to stretch is used to stretch the cells  for this we have to emmet the height and width properties  */
+    /* justify-self: stretch; */
+    /* Same as justify-self  , align-self is used for positioning the cells but vertically either start , end , or center  */
+    /* align-self: end ; */
+    /* Same as we  can aplly stretch property on align-self also  */
+    /* align-self: stretch ; */
+    /* Now instead of justify and align we can use place-self property to place the cells in the conytainer  and we can use stretch property also within it */
+    place-self: center ;
+    /* place-self: stretch ; */
+
+    
+}
+.container{
+    border: 5px solid black;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(197, 102, 102);
+    display: grid;
+    gap:1rem;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
+    padding: 2rem   ;
+    justify-items: stretch;
+    /* Justify items property is used to position the items in start end or center  */
+    /* row-gap: 2rem;
+    column-gap: 2rem; */
+    /* grid-template-rows: repeat(4 , 1fr);
+    grid-template-columns: repeat(1 , 1fr) ; */
+}
