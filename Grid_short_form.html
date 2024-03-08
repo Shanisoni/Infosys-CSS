@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(167, 103, 226);
+                width: 100%;
+                height: 100%;
+        }
+        .container{
+            height: 100%;
+            width:100%;
+            background-color: rgb(109, 101, 101);
+            display: grid;
+            padding: 4rem;
+            gap: 1rem;
+
+
+
+            grid-template-areas:
+                "header header header"
+                "sidebar item1 item2"
+                "sidebar item3 item3"
+                "footer footer footer"       
+            ;
+        
+            
+
+        }
+
+
+        #header{
+
+            grid-area: header;
+
+        }
+
+        #sidebar{
+
+            grid-area: sidebar;
+            
+        }
+
+        #item1{
+            grid-area: item1;
+            
+        }
+        #item2{
+            grid-area:item2 ;
+        }
+
+        #item3{
+            grid-area: item3;
+        }
+
+        #footer{
+            grid-area:footer ;
+        }
+
+        .item{
+            background-color: blue;
+            border: solid 4px  black;
+            padding: 1rem;
+            color: rgb(226, 226, 226);
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <div class="container">
+        <div class="item" id="header">A</div>
+        <div class="item" id="sidebar">B</div>
+        <div class="item" id="item1">C</div>
+        <div class="item" id="item2">D</div>
+        <div class="item" id="item3">E</div>
+        <div class="item" id="footer">H</div>
+    </div>
+    
+</body>
+</html>
